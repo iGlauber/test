@@ -16,7 +16,7 @@ jobs:
         run: npm install --global vercel@latest
         
       - name: Estagio 3 - Pull Vercel token
-        run: vercel pull --yes --enviroment=production --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --enviromment=production --token=${{ secrets.VERCEL_TOKEN }}
       
       - name: Estagio 4 - Construir o projeto
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
